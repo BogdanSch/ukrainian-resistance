@@ -309,6 +309,7 @@ nav,
 }
 
 .about__iframe {
+  border-radius: 8px;
   display: block;
   margin: 0 auto;
   width: 80%;
