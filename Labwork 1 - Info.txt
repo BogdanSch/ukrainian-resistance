@@ -1,0 +1,26 @@
+Labwork 1 - Report
+
+Tasks - Block 1 (All)
+1. Develop a website with three interconnected pages using the markup
+elements <header>, <main>, <footer>, <aside>, <article>, <section>
+2. Use basic tags, colors (text color, text background), paragraphs, headings,
+font (H1..H6), images, links (hyperlinks to another web document; hyperlinks to
+another place in the current document), lists (numbered, bulleted, bulleted list that
+is nested in a numbered list), tags, text formatting tools, tables, page background
+(color, picture). Develop a "footer".
+3. Include all meta tags you know in the site.
+4. Supplement the site with a single style for all pages using CSS.
+5. Consider the concepts: ways to implement CSS into a page (Global and
+Related styles, CSS settings on the fly), selector, class, ID selectors, fonts, colors,
+background, alignment, lists, borders and frames, cursors)
+
+Tasks - Block 2 (3 tasks)
+1. Supplement your web pages with the <nav> markup element with a
+horizontal drop-down menu.
+2. Implement a frame on your page.
+3. Create a form using the datetime, email, tel, url elements, and use the form
+validation attributes.
+
+Task – Block 3 (1 task)
+1. Get acquainted with and apply the universal selector *, child selector and
+pseudo-class selectors (for at least 3 different elements).

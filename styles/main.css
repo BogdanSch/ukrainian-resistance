@@ -2,8 +2,8 @@
 @import url("./variables.css");
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -214,7 +214,7 @@ section {
 }
 
 .header__title:hover {
-  text-shadow: 4px 4px 20px rgba(255, 100, 0, 1);
+  text-shadow: var(--header-text-shadow);
 }
 /* Header - End */
 /* Sidebar - Start */
@@ -522,14 +522,14 @@ input:focus {
 
 .support__item {
   padding: 10px 20px;
-  background-color: #fff;
+  background-color: var(--light);
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--basic-dark-shadow);
 }
 
 .support__item-link {
   text-decoration: none;
-  color: #007bff;
+  color: var(--secondary);
   font-weight: 600;
   font-size: 1.5rem;
   transition: color 0.3s ease;
@@ -537,7 +537,7 @@ input:focus {
 }
 
 .support__item-link:hover {
-  color: #0056b3;
+  color: var(--dark-blue);
 }
 /* Support - End */
 /* Map - Start */

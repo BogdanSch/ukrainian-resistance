@@ -18,4 +18,5 @@
   --basic-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
   --basic-dark-shadow: rgba(21, 21, 22, 0.3) 0px 7px 29px 0px;
   --basic-orange-text-shadow: 4px 4px 20px rgba(255, 100, 0, 1);
+  --header-text-shadow: 4px 4px 20px rgba(255, 100, 0, 1);
 }
