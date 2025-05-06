@@ -147,13 +147,12 @@ tr:nth-child(even) {
 
 .btn-primary {
   border-radius: 8px;
-  background-color: var(--primary);
-  color: var(--dark);
+  background-color: var(--secondary);
+  color: var(--light);
   border: none;
 }
 
 .btn-primary:hover {
-  color: var(--white);
   background-color: var(--dark-blue);
 }
 
@@ -252,13 +251,13 @@ nav,
   background-color: var(--grey);
 }
 
-.nav__item:hover > a {
-  color: var(--dark-blue);
-}
-
 .nav__item > a {
   color: var(--white);
   text-decoration: none;
+}
+
+.nav__item:hover > a {
+  color: var(--dark-blue);
 }
 
 .nav__dropdown {
@@ -279,11 +278,11 @@ nav,
   box-shadow: var(--basic-dark-shadow);
 }
 
-.nav__sublist li {
+.nav__subitem {
   display: block;
 }
 
-.nav__sublist a {
+.nav__sublink {
   display: block;
   padding: 12px 16px;
   color: var(--white);
@@ -291,7 +290,7 @@ nav,
   transition: all 0.3s ease;
 }
 
-.nav__sublist a:hover {
+.nav__sublink:hover {
   color: var(--dark);
   background: var(--secondary);
 }
@@ -441,22 +440,22 @@ nav,
   display: block;
 }
 
-.contact-form input {
+.form-control {
   color: var(--dark);
   width: 100%;
   padding: 10px;
   font-size: 1rem;
   border: 1px solid var(--grey);
   border-radius: 8px;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
   outline: none;
 }
 
-input:valid {
+.form-control:valid {
   background-color: var(--green-transparent);
 }
 
-input:focus {
+.form-control:focus {
   background-color: var(--primary-transparent);
   border: 2px solid var(--secondary) !important;
 }
@@ -479,14 +478,14 @@ input:focus {
   gap: 12px;
 }
 
-.social-links a {
+.social-links__item-link {
   text-decoration: none;
   font-size: 1rem;
   color: var(--dark-blue);
   transition: color 0.3s ease;
 }
 
-.social-links a:hover {
+.social-links__item-link:hover {
   color: var(--orange);
 }
 
@@ -499,6 +498,7 @@ input:focus {
 .support {
   padding: 40px 0;
 }
+
 .support__wrap {
   text-align: center;
 }

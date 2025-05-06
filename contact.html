@@ -55,29 +55,24 @@
               <li class="nav__item nav__dropdown">
                 <a href="./index.html" class="nav__link">Home</a>
                 <ul class="nav__sublist">
-                  <li>
+                  <li class="nav__subitem">
                     <a href="./index.html#war-context" class="nav__sublink"
                       >Context</a
                     >
                   </li>
-                  <li>
+                  <li class="nav__subitem">
                     <a href="./index.html#casualties" class="nav__sublink"
                       >Casualties</a
                     >
                   </li>
-                  <li>
+                  <li class="nav__subitem">
                     <a href="./index.html#war-crimes" class="nav__sublink"
                       >War Crimes</a
                     >
                   </li>
-                  <li>
+                  <li class="nav__subitem">
                     <a href="./index.html#collapse" class="nav__sublink"
                       >Why Russia Must Collapse</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./index.html#sources" class="nav__sublink"
-                      >Sources</a
                     >
                   </li>
                 </ul>
@@ -85,7 +80,7 @@
               <li class="nav__item nav__dropdown">
                 <a href="./about.html" class="nav__link">About</a>
                 <ul class="nav__sublist">
-                  <li>
+                  <li class="nav__subitem">
                     <a href="./about.html#features" class="nav__sublink"
                       >Features</a
                     >
@@ -95,8 +90,25 @@
               <li class="nav__item">
                 <a href="./detail.html" class="nav__link">Detail</a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item nav__dropdown">
                 <a href="./contact.html" class="nav__link">Contact</a>
+                <ul class="nav__sublist">
+                  <li class="nav__subitem">
+                    <a href="./contact.html#contact" class="nav__sublink"
+                      >Get in touch</a
+                    >
+                  </li>
+                  <li class="nav__subitem">
+                    <a href="./contact.html#support" class="nav__sublink"
+                      >How to support Ukraine?</a
+                    >
+                  </li>
+                  <li class="nav__subitem">
+                    <a href="./contact.html#map" class="nav__sublink"
+                      >Our location</a
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
@@ -110,6 +122,7 @@
                   <div class="form-group">
                     <label for="name">Your Name:</label>
                     <input
+                      class="form-control"
                       type="text"
                       id="name"
                       name="name"
@@ -120,6 +133,7 @@
                   <div class="form-group">
                     <label for="email">Email:</label>
                     <input
+                      class="form-control"
                       type="email"
                       id="email"
                       name="email"
@@ -130,6 +144,7 @@
                   <div class="form-group">
                     <label for="tel">Phone Number:</label>
                     <input
+                      class="form-control"
                       type="tel"
                       id="tel"
                       name="tel"
@@ -138,12 +153,14 @@
                       pattern="\d{3}-\d{3}-\d{4}"
                     />
                     <p class="form-hint">
-                      User phone must be entered in this format: 123-456-7890.
+                      User phone number must be entered in this format:
+                      123-456-7890.
                     </p>
                   </div>
                   <div class="form-group">
                     <label for="datetime">Preferred Contact Date:</label>
                     <input
+                      class="form-control"
                       type="datetime-local"
                       id="datetime"
                       name="datetime"
@@ -153,6 +170,7 @@
                   <div class="form-group">
                     <label for="url">Website URL (if applicable):</label>
                     <input
+                      class="form-control"
                       type="url"
                       id="url"
                       name="url"
@@ -167,28 +185,44 @@
                   </h3>
                   <ul class="social-links__list">
                     <li class="social-links__item">
-                      <a href="https://www.instagram.com" target="_blank">
+                      <a
+                        href="https://www.instagram.com"
+                        class="social-links__item-link"
+                        target="_blank"
+                      >
                         <svg class="social-links__item-svg">
                           <use href="#instagramIcon"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-links__item">
-                      <a href="https://www.facebook.com" target="_blank">
+                      <a
+                        href="https://www.facebook.com"
+                        class="social-links__item-link"
+                        target="_blank"
+                      >
                         <svg class="social-links__item-svg">
                           <use href="#facebookIcon"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-links__item">
-                      <a href="https://discord.com" target="_blank">
+                      <a
+                        href="https://discord.com"
+                        class="social-links__item-link"
+                        target="_blank"
+                      >
                         <svg class="social-links__item-svg">
                           <use href="#discordIcon"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social-links__item">
-                      <a href="https://www.linkedin.com/" target="_blank">
+                      <a
+                        href="https://www.linkedin.com/"
+                        class="social-links__item-link"
+                        target="_blank"
+                      >
                         <svg class="social-links__item-svg">
                           <use href="#linkedInIcon"></use>
                         </svg>
