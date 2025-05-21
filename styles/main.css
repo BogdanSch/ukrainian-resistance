@@ -166,6 +166,7 @@ section {
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
   background-color: var(--white);
   padding: 20px 12px;
   box-shadow: var(--basic-shadow);
@@ -215,6 +216,65 @@ section {
 
 .header__title:hover {
   text-shadow: var(--header-text-shadow);
+}
+
+.header__hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-contents;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
+.header__hamburger-menu:has(.header__hamburger-base:focus-visible)::before,
+.header__hamburger-menu:has(.header__hamburger-base:focus-visible)::after,
+.header__hamburger-base:focus-visible {
+  border: 1px solid var(--dark);
+  box-shadow: 0 0 0 1px var(--light);
+}
+
+.header__hamburger-menu::before,
+.header__hamburger-menu::after,
+.header__hamburger-base {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--secondary);
+  border-radius: 40px;
+  transform-origin: left center;
+  transition: all var(--hamburger-animation-timing);
+}
+
+.header__hamburger-base {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.header__hamburger-menu:has(.header__hamburger-base:checked)::before {
+  width: var(--x-width);
+  rotate: 45deg;
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.header__hamburger-menu:has(.header__hamburger-base:checked)::after {
+  width: var(--x-width);
+  rotate: -45deg;
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.header__hamburger-base:checked {
+  opacity: 0;
+  width: 0;
+}
+@media screen and (max-width: 440px) {
+  .header__hamburger-menu {
+    display: flex;
+  }
 }
 /* Header - End */
 /* Sidebar - Start */
@@ -298,6 +358,21 @@ nav,
 
 .nav__dropdown:hover .nav__sublist {
   display: block;
+}
+
+@media screen and (max-width: 440px) {
+  .sidebar {
+    position: fixed;
+    width: 70%;
+    transform: translateX(-100%);
+    transition: all var(--hamburger-animation-timing);
+  }
+  .wrapper:has(.header__hamburger-base:checked) .sidebar {
+    transform: translateX(0);
+  }
+  body:has(.header__hamburger-base:checked) {
+    overflow: hidden;
+  }
 }
 /* Sidebar - End */
 
@@ -580,7 +655,7 @@ nav,
 .contact-chat {
   position: fixed;
   bottom: 8%;
-  left: 90%;
+  right: 6%;
   width: 72px;
   height: 72px;
   background-color: var(--dark-blue);

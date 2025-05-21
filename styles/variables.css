@@ -19,4 +19,10 @@
   --basic-dark-shadow: rgba(21, 21, 22, 0.3) 0px 7px 29px 0px;
   --basic-orange-text-shadow: 4px 4px 20px rgba(255, 100, 0, 1);
   --header-text-shadow: 4px 4px 20px rgba(255, 100, 0, 1);
+
+  --bar-width: 48px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --hamburger-animation-timing: 0.4s ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2)
 }
