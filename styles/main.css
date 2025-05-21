@@ -17,8 +17,8 @@ body {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .container {
@@ -28,13 +28,19 @@ body {
 }
 
 .content {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: minmax(140px, 240px) 1fr;
+}
+
+@media screen and (max-width: 554px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
 }
 
 .main {
-  flex: 1;
+  /* flex: 1; */
+  min-width: 0;
 }
 
 h1,
@@ -271,9 +277,18 @@ section {
   opacity: 0;
   width: 0;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 554px) {
   .header__hamburger-menu {
     display: flex;
+  }
+  .header__title {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    transition: text-shadow 0.3s ease-in-out;
   }
 }
 /* Header - End */
@@ -284,7 +299,7 @@ section {
   height: 100vh;
   overflow-y: auto;
   z-index: 10;
-  width: clamp(140px, 20%, 200px);
+  /* width: clamp(140px, 20%, 200px); */
   background-color: var(--secondary);
 }
 
@@ -315,6 +330,7 @@ nav,
 .nav__item > a {
   color: var(--white);
   text-decoration: none;
+  font-size: 20px;
 }
 
 .nav__item:hover > a {
@@ -360,7 +376,7 @@ nav,
   display: block;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 554px) {
   .sidebar {
     position: fixed;
     width: 70%;
