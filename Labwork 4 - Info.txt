@@ -1,0 +1,11 @@
+Laboratory work 4 - Report
+
+Version 1:
+Create several blocks on the site. 
+Make 3 rows: the first should have 2 blocks, the second - 6, and the third - two blocks occupy half of the screen and another 3 blocks on the remaining half. All blocks should transform depending on the screen size. 
+
+When reducing to: 
+-md- in the first row - 2 blocks of 4 columns,
+-sm- in the second row - odd blocks disappear,
+-xs- in the third row - an empty space appears instead of the 2nd block. 
+

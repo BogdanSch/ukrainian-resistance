@@ -1,0 +1,19 @@
+Laboratory work 2 - Report
+
+Tasks – Block 1 
+1. Arrange your content on the pages from laboratory work No. 1 according 
+to the CSS Grid Layout concept (must be performed without changing the structure 
+of the HTML document)
+2. Modify the CSS file according to the BEM methodology.
+
+Tasks – Block 2 
+1. Place a fixed element in any corner of the page that deforms when the mouse 
+hovers over it.
+2. Implemented Detail page which makes use of CSS Grid technology to display the Gallery block.
+
+Task – Block 3 
+1. Using media queries and CSS, organize the display of the navigation menu 
+as a “sandwich” for devices with a screen width of 554px.  
+2. Use CSS to create a gallery with image animation (for example, when you 
+hover over an image, it enlarges and becomes more saturated) and set additional 
+styling for the images to ensure their adaptability.
