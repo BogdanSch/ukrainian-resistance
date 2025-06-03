@@ -1,0 +1,6 @@
+@import url("./variables.css");
+
+.stories__item-icon {
+  font-size: 32px;
+  color: var(--secondary);
+}
